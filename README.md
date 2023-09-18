@@ -35,7 +35,40 @@ The project is organized into the following directories and files:
 
 1. Clone this repository to your local machine.
 
+2. Create a virtual environment and activate it.
+
+    #### Linux / MacOS 
+    ``` bash
+    python -m venv venv
+    source venv/bin/activate
+    ```
+    #### Windows
+    ``` bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+
 3. Install the required dependencies by running:
 
    ```bash
-   pip install pandas openpyxl
+   pip install -r requirements.txt
+   ```
+
+4. Run the script:
+
+   ```bash
+    python3 code/data.py
+    ```
+
+5. The cleaned dataset will be saved in the 'reports/' directory as 'Result_cleaned.xlsx' and 'Result_cleaned.csv'. The summary report will be saved as 'Report.csv' in the same directory.
+
+## Dependencies
+
+- Python 3.8.5
+- pandas 1.2.4
+- numpy 1.20.3
+- openpyxl 3.0.7
+
+## License
+
+This project is licensed under the terms of the MIT license. See [LICENSE](LICENSE) for more details.
